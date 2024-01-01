@@ -1,0 +1,150 @@
+header{
+  background: var(--gray-700);
+  height: 20rem;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  font-size: 2rem;
+
+  gap: 1.2rem;
+}
+
+header h1 {
+  line-height: 1.4;
+  color: var(--blue-500);
+  font-weight: 900;
+}
+
+header h1 span {
+  color: var(--purple-400);
+  font-weight: 900;
+}
+
+.wrapper {
+  margin-top: 8px;
+  margin: 0 auto;
+  width: 700px;
+  height: 100%;
+}
+
+form {
+  margin-top: -2.3rem;
+  display: grid;
+  grid-template-areas: "input button";
+  grid-template-columns: 1fr 9rem;
+
+  gap: 0.8rem;
+
+  margin-bottom: 6.4rem;
+}
+form input {
+  grid-area: input;
+  padding: 1.6rem;
+  background-color: var(--gray-600);
+  color: var(--gray-200);
+
+  font-size: 1.6rem;
+  border-radius: 8px;
+
+  border: 1px solid var(--gray-700);
+}
+
+form input:focus{
+  border: 1px solid var(--purple-500);
+  color: var(--gray-200);
+}
+ 
+.buttonCreateTask {
+  border-radius: .8rem;
+  padding: 1.6rem;
+  border: 0;
+
+  background: var(--blue-700);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  color: var(--gray-100);
+
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.buttonCreateTask:hover{
+  background: var(--blue-500);
+}
+.buttonCreateTask:focus{
+  outline: 1px solid var(--white);
+}
+
+.counterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2.4rem;
+}
+
+.counterContainer p:first-child {
+  display: flex;
+  gap: .8rem;
+  font-size: 1.4rem;
+  color: var(--blue-500);
+  font-weight: 700;
+}
+
+.counterContainer p:nth-child(2) {
+  display: flex;
+  gap: .8rem;
+  font-size: 1.4rem;
+  color: var(--purple-400);
+  font-weight: 700
+}
+
+.counters {
+  border-radius: .8rem;
+  padding: 0 0.8rem;
+  line-height: 1.4;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+}
+
+.taskListEmpty, .taskListFull {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-height: 30rem;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px ;
+}
+.taskListFull {
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.clipboard{
+  width: 6rem;
+  height: 6rem;
+  
+}
+
+.clipboard ~ b{
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  color: var(--gray-300);
+}
+
+.clipboard ~ b ~ p{
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: var(--gray-300);
+}
